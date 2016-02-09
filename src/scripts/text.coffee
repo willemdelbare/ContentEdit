@@ -394,6 +394,7 @@ class ContentEdit.Text extends ContentEdit.Element
                 )
 
     _keyTab: (ev) ->
+        document.execCommand("insertHTML", false, "&nbsp; &nbsp; ");
         ev.preventDefault()
 
     _keyUp: (ev) ->
